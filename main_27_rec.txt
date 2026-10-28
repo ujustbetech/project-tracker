@@ -1,0 +1,57 @@
+main page shortcut 
+
+1. shortcut to go to submit payment request, outbound order check , current customs exchange rates, payment request pending for 
+
+Client Business flow: logisync : import and export from shipping, air and land so there is a cusomt house of government where the goods are unloaded fromt he port and then they get it to the own warehourse and shift to the other bonded warehouse and then ship. Container is used here and it is tracked and the data is taken from the API to check the current status of the container, 
+
+For air, sea and land it depends of the job type if it is ported to the custom
+For BTBT the goods are transferred to own's warehouse 
+Import job is for outside (navaseva port goverment store custom house) then stored in own warehouse
+mostly import, btbt and filework(only module made)- For the goods whose bond is extended. Bond is nothing but a place in the warehouse so it is given for a year and then if not completed in 1 year then charges and further procedures happen based on custom
+
+To extend the bond there is filework - Hence in the doc type there is bond extension 
+Import - Home, inbound and sez-z(ask ashish)
+
+Job type is important - for any job there is job type 
+
+
+for making data consistent hence there is job type 
+
+BE category - job is also called as BE but to categorise a job it is called as BE 
+
+
+BG setup -
+
+BG for navasewa port - sensitive and non sensitive.. BG is not uploaded but information is put of how much % and the timeline of its validity is put here. this data helps in the calculation of how much bank guarantee is to be put for a job 
+
+Branch master 0 ot used 
+Bulk upload - job data is uploaded...for updating bulk data field 
+
+
+general infor, exc rate, shipment of indv job can be updated 
+
+1 job has multiple container but only one category
+
+
+In BE file there is only input for the prt code and not the port name 
+
+Doc type was initially BE time 
+
+for goods transeferred to own warehouse of fec and for te goods transported from governmentto own warehouse then it is of doc type Inbound
+
+
+the scheduler runs everytime but it checksof there is other data still running 
+
+
+License master nothing created 
+
+
+job transfer to live job exception: for job to be imported to system 
+1. RPA -> System : FEC has an old system logisys so the olde system has job entry when there is job and then it is then pulled here using CRON -> From FTP filejob is taken 
+
+there is primary crm to understand who is looking after the job within organisation 
+
+label is also not use within organisation master 
+
+
+UI of the employee master can be changed. It is not yet decided as of now 
